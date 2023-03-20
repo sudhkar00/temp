@@ -1,0 +1,7 @@
+---
+- name: ping the target
+  hosts: linux_target
+  become: false
+  gather_facts: false
+  tasks:
+    - action: ping
